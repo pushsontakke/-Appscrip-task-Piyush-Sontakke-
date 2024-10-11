@@ -1,0 +1,81 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    line-height: 1.6;
+}
+
+header{
+    border-bottom: 1px solid #E5E5E5;
+}
+
+/* Banner */
+.banner {
+    background-color: #000000;
+    color: #EB4C6B;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banner-icon{
+    min-width: 1.2em;
+    margin: .5em;
+}
+.banner-icon, .banner-text{
+    vertical-align: middle;
+}
+
+/* Navigation Bar */
+.Logo{
+    margin: 0 2.5rem;
+}
+
+.top-nav{
+    display: flex;
+    justify-content:space-between;
+}
+
+.top-left-nav > img, select{
+    vertical-align: middle;
+}
+
+.top-left-nav > select, .top-left-nav>select>option{
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+select:active{
+    border: none;
+}
+
+nav {
+    padding: 2rem;
+    font-weight: 700;
+}
+.bottom-nav{
+    min-width: 50%;
+    margin: 0 25%;
+}
+
+.bottom-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.bottom-nav ul li a:hover {
+    text-decoration: underline;
+}
