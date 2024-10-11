@@ -33,6 +33,8 @@ header{
 
 /* Navigation Bar */
 .Logo{
+    width: 32px;
+    height: 32px;
     margin: 0 2.5rem;
 }
 
@@ -55,11 +57,11 @@ select:active{
 }
 
 nav {
-    padding: 2rem;
+    padding: 2em;
     font-weight: 700;
 }
 .bottom-nav{
-    min-width: 50%;
+    max-width: 50%;
     margin: 0 25%;
 }
 
@@ -78,4 +80,20 @@ nav {
 
 .bottom-nav ul li a:hover {
     text-decoration: underline;
+}
+
+.header-section{
+    text-align: center;
+    margin: 2rem 0;
+    color: #252020;
+}
+
+.header-section > h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.header-section > p{
+    font-size: 1em;
 }
