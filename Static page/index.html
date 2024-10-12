@@ -86,55 +86,72 @@
 
     <!-- Main Content Section with 20%/80% Layout. which left 20% section is for filter which can be hidden if required and right 80% section is to display products -->
     <section class="main-section">
+      <!-- sidebar filters section -->
       <div class="sidebar-filters">
-        <h3>Filters</h3>
-        <label for="ideal-for">Ideal For:</label>
+        <div id="customizable-checkbox">
+          <input type="checkbox" title="customizable" />
+          <label for="customizable-checkbox">Customizable</label>
+        </div>
+        <label for="ideal-for">Ideal For</label>
         <select id="ideal-for">
-          <option value="men">Men</option>
+          <option value="men">All</option>
+          <option value="women">men</option>
           <option value="women">Women</option>
         </select>
 
-        <label for="occasion">Occasion:</label>
+        <label for="occasion">Occasion</label>
         <select id="occasion">
+          <option value="men">All</option>
           <option value="casual">Casual</option>
           <option value="formal">Formal</option>
         </select>
 
-        <label for="work">Work:</label>
+        <label for="work">Work</label>
         <select id="work">
+          <option value="men">All</option>
           <option value="office">Office</option>
           <option value="outdoor">Outdoor</option>
         </select>
 
-        <label for="fabric">Fabric:</label>
+        <label for="fabric">Fabric</label>
         <select id="fabric">
+          <option value="men">All</option>
+          <option value="cotton">Cotton</option>
+          <option value="silk">Silk</option>
+        </select>
+
+        <label for="ideal-for">segment</label>
+        <select id="segment">
+          <option value="men">All</option>
+          <option value="men">Men</option>
+          <option value="women">Women</option>
+        </select>
+
+        <label for="occasion">suitable for</label>
+        <select id="suitable-for">
+          <option value="men">All</option>
+          <option value="casual">Casual</option>
+          <option value="formal">Formal</option>
+        </select>
+
+        <label for="work">raw materials</label>
+        <select id="raw-materials">
+          <option value="men">All</option>
+          <option value="office">Office</option>
+          <option value="outdoor">Outdoor</option>
+        </select>
+
+        <label for="fabric">Pattern</label>
+        <select id="Pattern">
+          <option value="men">All</option>
           <option value="cotton">Cotton</option>
           <option value="silk">Silk</option>
         </select>
       </div>
 
-      <div class="products-grid">
-        <h3>Products</h3>
-
-        <div class="product-card">
-          <img src="images/laptop-product.jpg" alt="High-Performance Laptop" />
-          <h4>High-Performance Laptop</h4>
-          <p>$999.99</p>
-        </div>
-
-        <div class="product-card">
-          <img src="images/smartphone-product.jpg" alt="Latest 5G Smartphone" />
-          <h4>Latest 5G Smartphone</h4>
-          <p>$799.99</p>
-        </div>
-
-        <div class="product-card">
-          <img src="images/headphones-product.jpg" alt="Wireless Headphones" />
-          <h4>Wireless Headphones</h4>
-          <p>$199.99</p>
-        </div>
-
-        <!-- More product cards can go here -->
+      <!-- Products grid -->
+      <div id="products-grid" class="products-grid">
+        <!-- products will showcase here -->
       </div>
     </section>
 
@@ -147,8 +164,8 @@
       </div>
       <div class="footer-links">
         <h3>Contact Us</h3>
-        <p>Email: support@estore.com</p>
         <p>Phone: +91-123-456-7890</p>
+        <p>Email: support@estore.com</p>
         <div class="social-media">
           <a href="#">Facebook</a>
           <a href="#">Instagram</a>
@@ -159,5 +176,7 @@
         <p>&copy; 2024 E-store. All rights reserved.</p>
       </div>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
