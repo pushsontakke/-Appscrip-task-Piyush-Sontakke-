@@ -39,7 +39,7 @@
             <img src="./assets/heart.png" alt="Like-Button" />
             <img src="./assets/shopping-bag.png" alt="Shopping-Bag" />
             <img src="./assets/profile.png" alt="Profile" />
-            <select id="languages">
+            <select id="languages" class="uppercase">
               <option value="english">Eng</option>
               <option value="marathi">Mar</option>
               <option value="hindi">Hin</option>
@@ -48,19 +48,19 @@
         </div>
         <div class="bottom-nav">
           <ul>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Stories</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact us</a></li>
-        </ul>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Stories</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
         </div>
       </nav>
     </header>
 
     <!-- Header Section with Description -->
     <section class="header-section">
-      <h2>Discover our products</h2>
+      <h2 class="uppercase">Discover our products</h2>
       <p>
         Your ultimate destination for fashion and electronics at unbeatable
         prices!
@@ -69,14 +69,22 @@
 
     <!-- Filter Section -->
     <section class="filter-section">
-      <label for="sort">Sort by:</label>
-      <select id="sort">
+      <div class="left-filter-section">
+        <!-- This data can be filled dynamically using javascript.  -->
+        <span id="total-products" class="uppercase">3425 Items</span>
+        <div class="hide-button uppercase">
+          <span>&lt;</span>
+          <span>Hide filter</span>
+        </div>
+      </div>
+
+      <select id="sort" class="uppercase">
         <option value="recommended">Recommended</option>
         <option value="latest">Latest Trends</option>
       </select>
     </section>
 
-    <!-- Main Content Section with 20%/80% Layout -->
+    <!-- Main Content Section with 20%/80% Layout. which left 20% section is for filter which can be hidden if required and right 80% section is to display products -->
     <section class="main-section">
       <div class="sidebar-filters">
         <h3>Filters</h3>
@@ -140,7 +148,7 @@
       <div class="footer-links">
         <h3>Contact Us</h3>
         <p>Email: support@estore.com</p>
-        <p>Phone: +1-800-555-1234</p>
+        <p>Phone: +91-123-456-7890</p>
         <div class="social-media">
           <a href="#">Facebook</a>
           <a href="#">Instagram</a>

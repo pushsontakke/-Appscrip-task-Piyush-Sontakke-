@@ -6,13 +6,17 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     color: #000000;
     line-height: 1.6;
 }
 
-header{
+header {
     border-bottom: 1px solid #E5E5E5;
+}
+
+.uppercase{
+    text-transform: uppercase;
 }
 
 /* Banner */
@@ -23,36 +27,40 @@ header{
     justify-content: space-evenly;
 }
 
-.banner-icon{
+.banner-icon {
     min-width: 1.2em;
     margin: .5em;
 }
-.banner-icon, .banner-text{
+
+.banner-icon,
+.banner-text {
     vertical-align: middle;
 }
 
 /* Navigation Bar */
-.Logo{
+.Logo {
     width: 32px;
     height: 32px;
     margin: 0 2.5rem;
 }
 
-.top-nav{
+.top-nav {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-.top-left-nav > img, select{
+.top-left-nav>img,
+select {
     vertical-align: middle;
 }
 
-.top-left-nav > select, .top-left-nav>select>option{
+.top-left-nav>select,
+.top-left-nav>select>option {
     border: none;
-    text-transform: uppercase;
     font-weight: 700;
 }
-select:active{
+
+select:active {
     border: none;
 }
 
@@ -60,7 +68,8 @@ nav {
     padding: 2em;
     font-weight: 700;
 }
-.bottom-nav{
+
+.bottom-nav {
     max-width: 50%;
     margin: 0 25%;
 }
@@ -82,18 +91,57 @@ nav {
     text-decoration: underline;
 }
 
-.header-section{
+/* Header Section */
+.header-section {
     text-align: center;
     margin: 2rem 0;
     color: #252020;
 }
 
-.header-section > h2{
+.header-section>h2 {
     font-size: 2.5rem;
     font-weight: 400;
-    text-transform: uppercase;
 }
 
-.header-section > p{
-    font-size: 1em;
+/* Filter Section */
+.filter-section {
+    border-bottom: 1px solid #E5E5E5;
+    border-top: 1px solid #E5E5E5;
+    padding: 1rem 0;
+    margin: 0 4rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.left-filter-section{
+    display: flex;
+    align-items: center;
+}
+
+#total-products{
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.hide-button{
+    color: #888792;
+    padding: 1em;
+    margin: -2em 2em;
+    background: none;
+    border: none;
+}
+
+.hide-button > span:last-child{
+    text-decoration: underline;
+}
+
+.hide-button:hover {
+    cursor: pointer;
+}
+
+#sort {
+    border: none;
+    font-weight: 700;
+    margin: 0 1rem;
 }
