@@ -14,12 +14,20 @@ function displayProducts(products) {
     const productsContainer = document.getElementById("products-grid");
 
     products.forEach(product => {
+        console.log(product.title)
         const productCard = `
             <div class="product-card">
-                <img src="${product.image}" alt="${product.name}">
-                <h2>${product.name}</h2>
-                <p>Price: $${product.price}</p>
-                <button>Add to Cart</button>
+                <div class="card-img">
+                <img src="${product.image}" alt="${product.title}">
+                </div>
+                <div class="card-info">
+                <p class="card-name">${product.title}</p>
+                <div>
+                <p class="card-price">Price: $${product.price}</p>
+                <button class="cart-button">Add to Cart</button>
+                </div>
+                </div>
+                
             </div>
         `;
         productsContainer.innerHTML += productCard;

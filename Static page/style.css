@@ -196,28 +196,47 @@ nav {
 
 .product-card {
     max-width: 15em;
+    max-height: 20em;
     background-color: #fff;
     padding: 1rem;
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
-
 }
 
-.product-card img {
-    max-width: 100%;
-    height: auto;
+.cart-button {
+    background: none;
+    padding: .4em;
+    border: 1px solid grey;
 }
 
-.product-card h4 {
-    margin-top: 1rem;
-    font-size: 1.2rem;
+.card-img {
+    height: 60%;
 }
 
-.product-card p {
-    color: #007bff;
-    font-size: 1rem;
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-info {
+    /* height: 40%; */
+}
+
+.card-info>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-name {
+    font-weight: 600;
+    font-size: 14px;
 }
 
 /* Footer Section */
@@ -235,6 +254,12 @@ footer .subscribe {
     margin-right: 2rem;
 }
 
+footer .subscribe>p {
+    font-size: 13px;
+    color: #c7c7c7;
+    margin-bottom: 1.5rem;
+}
+
 footer .subscribe input {
     padding: 0.5rem;
     margin-right: 1rem;
@@ -242,9 +267,9 @@ footer .subscribe input {
 
 footer .subscribe button {
     padding: 0.5rem 1rem;
-    background-color: #007bff;
+    background-color: black;
     color: white;
-    border: none;
+    border: 1px solid #c7c7c7;
     cursor: pointer;
 }
 
@@ -261,7 +286,14 @@ footer .social-media a {
 }
 
 footer .footer-info {
+    border-top: 1px solid #424242;
     text-align: center;
     width: 100%;
+    padding: 1rem;
     margin-top: 2rem;
+}
+
+footer .footer-info>p {
+    font-size: 13px;
+    color: #c7c7c7;
 }
